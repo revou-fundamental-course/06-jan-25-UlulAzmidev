@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
    
@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: "Montserrat", serif;
     background-color: #faf6f6;
     font-family: 'Roboto', sans-serif;
     font-size: medium;
@@ -18,6 +19,9 @@ body {
 /* Header */
 .main-header {
     display: flex;
+    font-family: 'poppins' ,montserrat;
+    font-weight: 700;
+    font-size: medium;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
@@ -85,20 +89,27 @@ body {
     font-family: 'Poppins Medium';
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    padding-left: 30px;
-    margin-bottom: 0;
+
+.home {
+    font-size: 1,9rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .home-greeting {
-    
-    align-items: center;
-    gap: 10px; /* Jarak antara elemen */
-    padding-left : 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 60px); /* Lebar penuh dengan margin 30px di kanan dan kiri */
+    margin: 0 auto; /* Agar tetap di tengah */
+    box-sizing: border-box; /* Padding dihitung dalam ukuran box */
+    margin-bottom: 30px;
+
 }
 .home-greeting h1, .home-greeting h3, .home-greeting p {
     margin: 0; /* Menghilangkan margin default */
@@ -161,16 +172,14 @@ section {
     transform: scale(1.2);
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    font-size: 14px;
-    padding: 20px 0;
-}
+
 
 /* =================================================================about me======================================================================== */
 
+
+
 .container-about {
+    justify-content: center;
     display: flex;
     gap: 20px; /* Memberikan jarak yang sama antar card */
 }
@@ -225,17 +234,23 @@ p {
 }
 
 /* ========================================================================== CONTACT ME =====================================================================*/
+
+
 .kartu{
     max-width: 600px;
     margin: 0 auto;
+    border: 1px solid #ccc;
+    justify-content:center ;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   input, textarea {
-    width: 500px;
+    width: 90%;
+    justify-content: center;
     padding: 10px;
+    display: flex;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -255,11 +270,34 @@ p {
     color: red;
     font-size: 12px;
   }
-  
+
+
+  /* ========================================== FOOTER ================================================ */
+  footer {
+    background-color:white;
+    color :#6c4be0;
+    text-align: center; /* Rata tengah */
+    padding: 20px; /* Jarak dalam footer */
+    margin-top: 20px;
+    bottom: 0;
+    font-family: poppins;
+    width: 100%;
+    box-sizing: border-box; /* Agar padding dihitung dalam lebar */
+}
+
+/* Styling untuk link dalam footer */
+footer a {
+    color: #f39c12; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Efek hover pada link */
+}
 
 
 
-  /* responsive  */
+  /* ==================================================== responsive ===================================================================== */
 
   
 @media (max-width: 480px) {
@@ -299,6 +337,11 @@ p {
         .navigation.active {
             display: flex;
         }
+
+
+
+
+        /* =======about=========== */
         .container-about {
             width: auto;
             align-items: center;
@@ -311,10 +354,24 @@ p {
             justify-content: center;
             flex-wrap: wrap;
         }
-        input, textarea {
+
+
+
+        .kartu {
             width: auto;
+            align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
         }
+        input, textarea {
+            width: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+
+
         .main-header {
             flex-direction: column;
             align-items: flex-start;
@@ -338,6 +395,23 @@ p {
             width: auto;
             max-width: auto;
         }
+
+
+
+
+
+        footer {
+            padding: 15px; /* Mengurangi padding di ponsel */
+        }
+    
+        footer p {
+            font-size: 14px; /* Ukuran font sedikit lebih kecil di ponsel */
+        }
+    
+        footer a {
+            font-size: 14px; /* Ukuran font link lebih kecil di ponsel */
+        }
+    
     }
     
     
