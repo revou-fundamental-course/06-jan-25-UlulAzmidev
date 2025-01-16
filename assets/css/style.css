@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+   
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #faf6f6;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    line-height: 1.6;
+    padding: 0 10px;
+    margin-left:0 auto;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fff;
+    height: 50px;
+    margin-top:0 auto ;
+}
+
+/*============================================ Navigation =============================================== */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+    font-family: 'poppins';
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    margin:  2px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #6c4be0;
+    color: #fff;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* ===============================Logo=================================================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===========================================================Homepage ==================================================*/
+.homepage {
+    width: 95%;
+    padding-bottom: 40px;
+}
+
+.user {
+    color: #6c4be0;
+    font-size: 30px;
+    font-family: 'Poppins Medium';
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+.home-greeting {
+    
+    align-items: center;
+    gap: 10px; /* Jarak antara elemen */
+    padding-left : 30px;
+}
+.home-greeting h1, .home-greeting h3, .home-greeting p {
+    margin: 0; /* Menghilangkan margin default */
+}
+/* ======================================================= Slider========================================= */ */
+
+/* Container untuk slider */
+.container {
+    max-width: 900px; /* Lebar maksimum container */
+    margin: 0 auto; /* Memusatkan container */
+    padding: 20px; /* Memberikan padding di sekitar container */
+}
+
+/* Slider Container */
+.slider-container {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%; /* Lebar gambar 100% dari container */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    max-height: 400px; /* Mengatur tinggi maksimum untuk gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan terpotong jika perlu */
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+    border-radius: 10px; /* Sudut membulat untuk gambar */
+}
+
+/* Navigasi */
+.navigation11 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation11 button {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5px; /* Sudut membulat untuk tombol */
+}
+
+.navigation11 button:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+/* =================================================================about me======================================================================== */
+
+.container-about {
+    display: flex;
+    gap: 20px; /* Memberikan jarak yang sama antar card */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Lebar card */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Memastikan gambar tidak keluar dari lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    margin: 0 auto; /* Memusatkan box */
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar tetap proporsional di dalam kotak */
+}
+
+h3 {
+    margin: 10px 0 5px; /* Margin untuk judul */
+}
+
+p {
+    margin: 5px 0 10px; /* Margin untuk deskripsi */
+}
+
+.btn {
+    background-color: #6c4be0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #218838; /* Warna saat hover */
+}
+
+/* ========================================================================== CONTACT ME =====================================================================*/
+.kartu{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  input, textarea {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background-color:#6c4be0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color:#6c4be0;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+
+
+
+  /* responsive  */
+
+  
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+        .user {
+            font-size: 24px;
+        }
+    
+        .logo span {
+            font-size: 14px;
+        }
+        .menu-toggle {
+            display: block;
+        }
+    
+        .navigation {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #f4f4f4;
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            width: 200px;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    
+        .navigation a {
+            text-align: center;
+            padding: 10px;
+        }
+    
+        .navigation.active {
+            display: flex;
+        }
+        .container-about {
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        input, textarea {
+            width: auto;
+            flex-wrap: wrap;
+        }
+        .main-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navigation {
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .logo img {
+            height: 35px;
+            width: 35px;
+        }
+    
+        .logo span {
+            font-size: 16px;
+        }
+    
+        .slider-container {
+            width: auto;
+            max-width: auto;
+        }
+    }
+    
+    
+
+    
+    
